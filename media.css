@@ -1,0 +1,32 @@
+@media (max-width:740px){
+    
+    .about-content img{
+        width: 100%;
+    }
+    .nav-content-list{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        top: -100%;
+        left: 0;
+        z-index: 999;
+        background: rgba(0, 0, 0, 0.5);
+        transition: 0.5s;
+        font-size: 30px;
+    }
+    .burger{
+        display: block;
+    }
+    .burger:hover ~ .nav-content-list{
+        top: 0;
+        padding-top: 25px;
+    }
+}
+@media (max-width:440px){
+    .form input{
+        max-width: 125px;
+    }
+}
